@@ -8,10 +8,12 @@
 def main():
     while True:
         try:
+            # Input
             # calculates if year is a leap year
             year = int(input("Enter a year: "))
-            print()
-        
+            print("")
+
+            # Output and Process
             if year % 4 == 0 and year % 100 != 0:
                 print("It is a leap year")
             if year % 4 != 0:
@@ -23,9 +25,9 @@ def main():
                     print("It is a leap year")
 
         except ValueError:
-            print()
+            print("")
             print("Invalid Input, Please Try Again")
-            print()
+            print("")
 
         else:
             break
